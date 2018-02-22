@@ -5,8 +5,8 @@ import sinon from 'sinon';
 
 import Foo from '../src/Foo.jsx';
 
-describe('<Foo />のテスト', () => {
-  it('Fooをテスト', () => {
+describe('test <Foo />', () => {
+  it('test Foo Component', () => {
     sinon.spy(Foo.prototype, 'componentDidMount');
     const wrapper = shallow(<Foo />, { lifecycleExperimental: true });
     const label = wrapper.find('.foo');
